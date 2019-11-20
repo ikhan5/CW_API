@@ -7,9 +7,14 @@ var seatingPlan = require("../data/seating_plan.json");
 //DESC: Gets single seating plan based on first and last name
 router.post("/", (request, response) => {
   const { first_name, last_name } = request.body;
-  let seatInfo = seatingPlan.filter(
-    seat => seat.first_name === first_name && seat.last_name === last_name
-  );
+  let seatInfo = [];
+  if (first_name && last_name) {
+    seatInfo = seatingPlan.filter(
+      seat =>
+        seat.first_name.toLowerCase() === first_name.toLowerCase() &&
+        seat.last_name.toLowerCase() === last_name.toLowerCase()
+    );
+  }
 
   response.json({
     seatInfo
