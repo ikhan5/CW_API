@@ -8,30 +8,36 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
-    <header>LOGO</header>
-    <h2>Zelig Esch</h2>
-    <main id="main">
-      <form class="lookup_form">
-        <h1 class="lookup_header">Seat Lookup</h1>
-        <input
-          class="lookup_input"
-          type="text"
-          placeholder="Enter first and last name.."
-          required
-        />
-        <button class="lookup_submit">GO</button>
-      </form>
-      <div class="seating">
-        <div class="error">
-          <p class="seating_error"></p>
+    <div class="container">
+      <header class="container_header">
+        <img class="logo" src="./assets/logo.png" alt="Logo" />
+      </header>
+      <main class="container_content">
+        <form class="lookup_form">
+          <h1 class="lookup_header">Seat Lookup</h1>
+          <input
+            class="lookup_input"
+            type="text"
+            placeholder="John Smith"
+            required
+          />
+          <div>
+            <button class="lookup_submit">GO</button>
+          </div>
+        </form>
+        <div class="seating">
+          <div class="error">
+              <p>Sorry, cannot find</p>
+            <p class="seating_error"></p>
+          </div>
+          <div class="found">
+            <p class="seating_header"></p>
+            <p class="seating_floor"></p>
+            <p class="seating_letter"></p>
+          </div>
         </div>
-        <div class="found">
-          <p class="seating_header"></p>
-          <p class="seating_floor"></p>
-          <p class="seating_letter"></p>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
     <script src="scripts/script.js"></script>
   </body>
 </html>

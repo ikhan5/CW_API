@@ -31,13 +31,22 @@ window.onload = function() {
         if (typeof data.seatInfo[0] === "undefined") {
           errorMessage.style.display = "block";
           foundUser.style.display = "none";
-          seatingError.innerHTML = `Sorry, cannot find ${fullName[0] +
+
+          if(!fullName[1]){
+              fullName[1] = '';
+          }
+          seatingError.innerHTML = `${fullName[0] +
             " " +
             fullName[1]} in the system`;
         } else {
           errorMessage.style.display = "none";
           foundUser.style.display = "block";
           const { first_name, floor, seat } = data.seatInfo[0];
+
+          if (!first_name) {
+            first_name = "";
+          }
+
           seatingHeader.innerHTML = `${first_name} is seated on`;
           seatingFloor.innerHTML = `Floor ${floor}`;
           seatingLetter.innerHTML = `Seat ${seat}`;
