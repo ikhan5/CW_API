@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:400,700&display=swap");
 
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
+  box-sizing : border-box;
 }
 
 body {
@@ -20,7 +23,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 420px;
-  min-width: 318px;
   height: 570px;
   border: solid 2px #c7972c;
   border-radius: 10px;
@@ -68,6 +70,7 @@ body {
   box-shadow: 0px 3px 6px #00000029;
   padding: 20px 16px;
   margin-bottom: 60px;
+  max-width: 300px;
 }
 
 .lookup_submit {
