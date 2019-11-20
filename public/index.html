@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Seat Lookup</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <header>LOGO</header>
+    <h2>Zelig Esch</h2>
+    <main id="main">
+      <form class="lookup_form">
+        <h1 class="lookup_header">Seat Lookup</h1>
+        <input
+          class="lookup_input"
+          type="text"
+          placeholder="Enter first and last name.."
+          required
+        />
+        <button class="lookup_submit">GO</button>
+      </form>
+      <div class="seating">
+        <div class="error">
+          <p class="seating_error"></p>
+        </div>
+        <div class="found">
+          <p class="seating_header"></p>
+          <p class="seating_floor"></p>
+          <p class="seating_letter"></p>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
