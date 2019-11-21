@@ -114,7 +114,7 @@ html,body{
 /* Media Queries */
 
 @media only screen and (max-width: 420px) {
-  body {
+  .test {
     background-image: none;
     background-color: white;
     align-items: flex-start;
