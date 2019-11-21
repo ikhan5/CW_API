@@ -32,8 +32,8 @@ window.onload = function() {
           errorMessage.style.display = "block";
           foundUser.style.display = "none";
 
-          if(!fullName[1]){
-              fullName[1] = '';
+          if (!fullName[1]) {
+            fullName[1] = "";
           }
           seatingError.innerHTML = `${fullName[0] +
             " " +
@@ -53,4 +53,23 @@ window.onload = function() {
         }
       });
   });
+};
+
+window.onresize = function() {
+  var width = Math.max(
+    document.documentElement.clientWidth,
+    window.innerWidth || 0
+  );
+  var height = Math.max(
+    document.documentElement.clientHeight,
+    window.innerWidth || 0
+  );
+
+  let html = document.querySelector("html");
+  let body = document.querySelector("body");
+
+  html.style.width = width;
+  body.style.width = width;
+  html.style.height = height;
+  body.style.height = height;
 };

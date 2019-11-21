@@ -12,8 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 568px;
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(to right, #0684ac66, #0684ac);
   font-family: "Lato", sans-serif;
 }
