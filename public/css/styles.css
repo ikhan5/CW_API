@@ -119,7 +119,7 @@ body {
   }
 
   .container {
-    height: 100vh;
+    min-height: 580px;
   }
 
   .lookup_form {
