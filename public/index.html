@@ -8,41 +8,35 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
-    <div class="test">
-      <div class="container">
-        <header class="container_header">
-          <img
-            class="logo"
-            src="./assets/casewarelogo/casewarelogo@2x.png"
-            alt="Logo"
+    <div class="container">
+      <header class="container_header">
+        <img class="logo" src="./assets/casewarelogo/casewarelogo@2x.png" alt="Logo" />
+      </header>
+      <main class="container_content">
+        <form class="lookup_form">
+          <h1 class="lookup_header">Seat Lookup</h1>
+          <input
+            class="lookup_input"
+            type="text"
+            placeholder="First and Last Name"
+            required
           />
-        </header>
-        <main class="container_content">
-          <form class="lookup_form">
-            <h1 class="lookup_header">Seat Lookup</h1>
-            <input
-              class="lookup_input"
-              type="text"
-              placeholder="First and Last Name"
-              required
-            />
-            <div>
-              <button class="lookup_submit">GO</button>
-            </div>
-          </form>
-          <div class="seating">
-            <div class="error">
-              <p>Sorry, cannot find</p>
-              <p class="seating_error"></p>
-            </div>
-            <div class="found">
-              <p class="seating_header"></p>
-              <p class="seating_floor"></p>
-              <p class="seating_letter"></p>
-            </div>
+          <div>
+            <button class="lookup_submit">GO</button>
           </div>
-        </main>
-      </div>
+        </form>
+        <div class="seating">
+          <div class="error">
+              <p>Sorry, cannot find</p>
+            <p class="seating_error"></p>
+          </div>
+          <div class="found">
+            <p class="seating_header"></p>
+            <p class="seating_floor"></p>
+            <p class="seating_letter"></p>
+          </div>
+        </div>
+      </main>
     </div>
     <script src="scripts/script.js"></script>
   </body>

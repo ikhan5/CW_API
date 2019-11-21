@@ -8,11 +8,7 @@
   box-sizing : border-box;
 }
 
-html,body{
-  min-height: 100%;
-}
-
-.test {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +110,7 @@ html,body{
 /* Media Queries */
 
 @media only screen and (max-width: 420px) {
-  .test {
+  body {
     background-image: none;
     background-color: white;
     align-items: flex-start;
